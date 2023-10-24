@@ -28,6 +28,10 @@ $documentary-gradient: linear-gradient(
 );
 $coming-soon-gradient: linear-gradient(85deg, #0d1a73 1.67%, #000 50.52%);
 $coming-soon-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.1);
-$motivation-gradient: linear-gradient(337deg, #000 58.12%, #fff 124.09%);
+$motivation-gradient: linear-gradient(
+  337deg,
+  rgba(0, 0, 0, 0.8),
+  rgba(255, 255, 255, 0.2)
+);
 $footer-background: #101012;
 $timing-function: cubic-bezier(0.4, 0, 0.2, 1);

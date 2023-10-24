@@ -1,0 +1,110 @@
+.motivation {
+  @media screen and (max-width: 768px) {
+    padding-top: 50px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 80px;
+  }
+
+  @media screen and (min-width: 1200px) and (max-width: 1599px) {
+    padding-top: 100px;
+  }
+  @media screen and (min-width: 1600px) {
+    padding-top: 120px;
+  }
+}
+.motivation__container {
+  @extend %container;
+}
+.motivation__poster {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  background-image: $motivation-gradient, url(../images/Bg/MotivationBg.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: blur(25px);
+  width: 85%;
+  height: 145px;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: $motivation-gradient,
+      url(../images/Bg/MotivationBg@2x.webp);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    height: 160px;
+    gap: 15px;
+  }
+
+  @media screen and (min-width: 1200px) and (max-width: 1599px) {
+    height: 230px;
+    gap: 80px;
+  }
+  @media screen and (min-width: 1600px) {
+    height: 270px;
+    gap: 80px;
+  }
+}
+.motivation__meta {
+  font-weight: 700;
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 34px;
+  }
+
+  @media screen and (min-width: 1200px) and (max-width: 1599px) {
+    font-size: 50px;
+  }
+  @media screen and (min-width: 1600px) {
+    font-size: 64px;
+  }
+}
+
+.motivation__link {
+  @extend %button;
+  width: 141px;
+  height: 50px;
+  @media screen and (max-width: 768px) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+.motivation__link--mobile {
+  @extend %button;
+  width: 120px;
+  height: 40px;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
