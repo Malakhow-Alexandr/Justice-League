@@ -33,40 +33,40 @@ img {
   height: auto;
 }
 
-.actors__container, .ganres__container, .trending__container {
+.coming-soon__container, .actors__container, .ganres__container, .trending__container {
   margin-left: auto;
   margin-right: auto;
   padding-left: 10px;
   padding-right: 10px;
 }
 @media screen and (max-width: 360px) {
-  .actors__container, .ganres__container, .trending__container {
+  .coming-soon__container, .actors__container, .ganres__container, .trending__container {
     max-width: 360px;
   }
 }
 @media screen and (min-width: 360px) and (max-width: 767px) {
-  .actors__container, .ganres__container, .trending__container {
+  .coming-soon__container, .actors__container, .ganres__container, .trending__container {
     width: 360px;
     padding-left: 15px;
     padding-right: 15px;
   }
 }
 @media screen and (min-width: 768px) {
-  .actors__container, .ganres__container, .trending__container {
+  .coming-soon__container, .actors__container, .ganres__container, .trending__container {
     width: 768px;
     padding-left: 25px;
     padding-right: 25px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .actors__container, .ganres__container, .trending__container {
+  .coming-soon__container, .actors__container, .ganres__container, .trending__container {
     width: 1200px;
     padding-left: 40px;
     padding-right: 40px;
   }
 }
 @media screen and (min-width: 1600px) {
-  .actors__container, .ganres__container, .trending__container {
+  .coming-soon__container, .actors__container, .ganres__container, .trending__container {
     width: 1600px;
     padding-left: 80px;
     padding-right: 80px;
@@ -115,7 +115,7 @@ img {
   position: absolute;
   bottom: -10px;
   left: 0;
-  width: 286px;
+  width: 100%;
   height: 3px;
   border-radius: 50px;
   background: linear-gradient(317deg, #26fff2 13.2%, #326cff 71.54%);
@@ -161,7 +161,11 @@ body {
   padding-top: 70px;
 }
 
-.trending__link-title--after-width:after {
+.trending__link-title {
+  width: 286px;
+}
+
+.trending__link-title--movies {
   width: 243px;
 }
 
@@ -212,7 +216,7 @@ body {
   padding-top: 100px;
 }
 
-.ganres__link-title:after {
+.ganres__link-title {
   width: 231px;
 }
 
@@ -307,8 +311,14 @@ body {
   padding-top: 75px;
 }
 
-.actors-link-title:after {
+.actors-link-title {
   width: 381px;
+}
+@media screen and (max-width: 420px) {
+  .actors-link-title {
+    font-size: 20px;
+    width: 300px;
+  }
 }
 
 .actors-list {
@@ -343,4 +353,130 @@ body {
 }
 .actors-list__link:hover .actor-list__meta {
   color: #26fff2;
+}
+
+.coming-soon {
+  padding-top: 100px;
+}
+
+.coming-soon__list {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.coming-soon__list-item {
+  width: 50%;
+  height: 341px;
+}
+@media screen and (min-width: 200px) and (max-width: 359px) {
+  .coming-soon__list-item {
+    height: 71px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .coming-soon__list-item {
+    height: 78px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .coming-soon__list-item {
+    height: 170px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
+  .coming-soon__list-item {
+    height: 265px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .coming-soon__list-item {
+    height: 341px;
+  }
+}
+
+.coming-soon__list-item--left {
+  background-image: url("../images/Bg/BigBunny.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.1);
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .coming-soon__list-item--left .coming-soon__list-item--left {
+    background-image: url("../images/Bg/BigBunny@2x.webp");
+  }
+}
+
+.coming-soon__list-item--right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(85deg, #0d1a73 1.67%, #000 50.52%);
+  box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.1);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 359px) {
+  .coming-soon__img {
+    width: 70px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .coming-soon__img {
+    width: 90px;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .coming-soon__img {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
+  .coming-soon__img {
+    width: 250px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .coming-soon__img {
+    width: 294px;
+    margin-bottom: 30px;
+  }
+}
+
+.coming-soon__meta {
+  font-weight: 700;
+  line-height: 20px;
+}
+@media screen and (min-width: 320px) and (max-width: 340px) {
+  .coming-soon__meta {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .coming-soon__meta {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .coming-soon__meta {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
+  .coming-soon__meta {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .coming-soon__meta {
+    font-size: 64px;
+  }
 }/*# sourceMappingURL=index.css.map */

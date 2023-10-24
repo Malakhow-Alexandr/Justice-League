@@ -8,8 +8,10 @@
 
 .actors-link-title {
   @extend %link-title;
-  &:after {
-    width: 381px;
+  width: 381px;
+  @media screen and (max-width: 420px) {
+    font-size: 20px;
+    width: 300px;
   }
 }
 .actors-list {

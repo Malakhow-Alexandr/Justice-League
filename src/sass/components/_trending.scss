@@ -7,12 +7,12 @@
 
 .trending__link-title {
   @extend %link-title;
+  width: 286px;
 }
-.trending__link-title--after-width {
-  &:after {
-    width: 243px;
-  }
+.trending__link-title--movies {
+  width: 243px;
 }
+
 .trending-list {
   display: flex;
   flex-wrap: wrap;

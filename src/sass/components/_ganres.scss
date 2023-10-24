@@ -8,9 +8,7 @@
 
 .ganres__link-title {
   @extend %link-title;
-  &:after {
-    width: 231px;
-  }
+  width: 231px;
 }
 
 .ganres-list {
