@@ -17,6 +17,10 @@
 .footer__logo {
   display: block;
   width: 157px;
+  transition: transform 250ms $timing-function;
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 .footer-link-list {
   display: flex;
