@@ -1,0 +1,47 @@
+.actors {
+  padding-top: 75px;
+}
+
+.actors__container {
+  @extend %container;
+}
+
+.actors-link-title {
+  @extend %link-title;
+  &:after {
+    width: 381px;
+  }
+}
+.actors-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.actors-list__link {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.actors-list__pic-thumb {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: box-shadow 250ms $timing-function;
+  .actors-list__link:hover & {
+    box-shadow: $posters-shadow;
+  }
+}
+
+.actor-list__meta {
+  transition: color 250ms $timing-function;
+  .actors-list__link:hover & {
+    color: $icon-link;
+  }
+}
