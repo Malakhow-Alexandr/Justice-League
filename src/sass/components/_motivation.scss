@@ -1,16 +1,20 @@
 .motivation {
   @media screen and (max-width: 768px) {
     padding-top: 50px;
+    padding-bottom: 50px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-top: 80px;
+    padding-bottom: 80px;
   }
 
   @media screen and (min-width: 1200px) and (max-width: 1599px) {
     padding-top: 100px;
+    padding-bottom: 100px;
   }
   @media screen and (min-width: 1600px) {
     padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
 .motivation__container {
