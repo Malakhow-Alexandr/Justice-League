@@ -1,0 +1,90 @@
+.ganres {
+  padding-top: 100px;
+}
+
+.ganres__container {
+  @extend %container;
+}
+
+.ganres__link-title {
+  @extend %link-title;
+  &:after {
+    width: 231px;
+  }
+}
+
+.ganres-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.ganres-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 340px;
+  height: 198px;
+  border-radius: 20px;
+  transition: transform 250ms $timing-function;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.ganres-list__item--romance {
+  background: $romance-gradient;
+}
+.ganres-list__item--drama {
+  background: $drama-gradient;
+}
+.ganres-list__item--historical {
+  background: $historical-gradient;
+}
+.ganres-list__item--action {
+  background: $action-gradient;
+}
+.ganres-list__item--sci-fi {
+  background: $sci-fi-gradient;
+}
+.ganres-list__item--horror {
+  background: $horror-gradient;
+}
+.ganres-list__item--comedy {
+  background: $comedy-gradient;
+}
+.ganres-list__item--documentary {
+  background: $documentary-gradient;
+}
+.ganres-list-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 20px;
+  transition: color 250ms $timing-function;
+
+  &:hover {
+    color: $secondary-text;
+  }
+  &:hover > svg {
+    transform: scale(1.15);
+  }
+}
+.ganres-list__icon {
+  width: 80px;
+  height: 80px;
+  transition: transform 350ms $timing-function;
+}
+
+.ganres-list__icon--sci-fi {
+  transform: scale(1.6);
+  transition: transform 350ms $timing-function;
+  .ganres-list-link:hover & {
+    transform: scale(1.8);
+  }
+}
