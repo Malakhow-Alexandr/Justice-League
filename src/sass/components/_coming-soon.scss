@@ -13,6 +13,9 @@
     padding-top: 100px;
   }
 }
+.coming-title {
+  @extend %visually-hidden;
+}
 
 .coming-soon__container {
   @extend %container;

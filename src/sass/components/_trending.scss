@@ -1,6 +1,9 @@
 .trending {
   padding-top: 70px;
 }
+.trending-tile {
+  @extend %visually-hidden;
+}
 .trending__container {
   @extend %container;
 }

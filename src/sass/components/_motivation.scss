@@ -17,8 +17,13 @@
     padding-bottom: 120px;
   }
 }
+
 .motivation__container {
   @extend %container;
+}
+
+.motivation-title {
+  @extend %visually-hidden;
 }
 .motivation__poster {
   display: flex;

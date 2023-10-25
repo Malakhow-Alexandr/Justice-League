@@ -2,6 +2,9 @@
   padding-top: 75px;
 }
 
+.actors-title {
+  @extend %visually-hidden;
+}
 .actors__container {
   @extend %container;
 }
