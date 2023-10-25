@@ -7,6 +7,7 @@
 .header__logo {
   width: 157px;
   padding-top: 10px;
+  padding-bottom: 10px;
   transition: transform 250ms $timing-function;
   &:hover {
     transform: scale(1.05);
