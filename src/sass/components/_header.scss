@@ -1,6 +1,3 @@
-.header {
-}
-
 .header__logo {
   width: 157px;
   transition: transform 250ms $timing-function;
@@ -19,6 +16,12 @@
 .header-nav {
   display: flex;
   gap: 50px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    gap: 25px;
+  }
 }
 .header-nav__link {
   display: block;
@@ -50,6 +53,9 @@
 .header-icon-list {
   display: flex;
   gap: 35px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .header-icon-list__link {
@@ -79,5 +85,36 @@
     border-radius: 50%;
     background: $button-border-after-gradient;
     z-index: 500;
+  }
+}
+
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  transition: transform 250ms $timing-function;
+  &:hover {
+    transform: scale(1.2);
+  }
+  &:active {
+    transform: rotate(15deg);
+  }
+  &:focus {
+    outline: none;
+  }
+}
+.js-open-menu {
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
