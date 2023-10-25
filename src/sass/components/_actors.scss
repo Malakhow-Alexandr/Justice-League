@@ -9,9 +9,9 @@
 .actors-link-title {
   @extend %link-title;
   width: 381px;
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 450px) {
     font-size: 20px;
-    width: 300px;
+    width: 290px;
   }
 }
 .actors-list {

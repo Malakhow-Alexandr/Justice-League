@@ -1,0 +1,212 @@
+.hero {
+  border-bottom: 2px solid $hero-border;
+}
+
+.hero__container {
+  @extend %container;
+
+  display: flex;
+  flex-direction: column-reverse;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    padding-right: 0px;
+  }
+}
+
+.hero-left-side {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 36.97%;
+    padding-top: 122px;
+    padding-bottom: 203px;
+    padding-right: 29px;
+  }
+}
+
+.hero__title {
+  font-family: Marcellus;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 70px;
+  margin-bottom: 39px;
+  @media screen and (min-width: 360px) and (max-width: 767px) {
+    font-size: 50px;
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 65px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 80px;
+  }
+}
+
+.hero-meta-list {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.hero-meta-list__item--border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 24px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  @media screen and (min-width: 768px) {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(317deg, #26fff2 13.2%, #326cff 71.54%);
+    z-index: 0;
+  }
+}
+
+.hero-meta-list__item--icon {
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  @media screen and (max-width: 359px) {
+    margin-left: 20px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 12px;
+  }
+}
+
+.hero-meta-list__meta {
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 10px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 14px;
+  }
+}
+
+.hero-meta-list__meta--border {
+  display: flex;
+  margin: auto;
+  position: relative;
+  left: 0.4%;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  width: 55px;
+  height: 21px;
+  background-color: fff;
+  z-index: 1;
+}
+.hero-meta-list__icon {
+  position: relative;
+  top: -1px;
+}
+.hero-film-description {
+  margin-bottom: 35px;
+  font-family: Mulish, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: $footer-text;
+}
+
+.hero-link-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.watch-more-link {
+  @extend %button;
+  width: 141px;
+  height: 50px;
+  @media screen and(min-width:768px) and (max-width: 1199px) {
+    font-size: 14px;
+  }
+}
+
+.watch-more-link__icon {
+  margin-right: 17px;
+  fill: #fff;
+  transition: fill 250ms $timing-function;
+  @media screen and(min-width:768px) and (max-width: 1199px) {
+    margin-right: 10px;
+  }
+  .watch-more-link:hover & {
+    fill: $secondary-text;
+  }
+}
+
+.more-information-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 195px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #fff;
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px;
+  color: $secondary-text;
+  transition: transform 250ms $timing-function, color 250ms $timing-function;
+
+  &:hover {
+    transform: scale(1.1);
+    color: $icon-link;
+  }
+
+  @media screen and(min-width:768px) and (max-width: 1199px) {
+    font-size: 14px;
+  }
+}
+
+.hero-right-side {
+  position: relative;
+  background-image: url(../images/Bg/HeroBanner.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 63.03%;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    height: 500px;
+    border-bottom: 2px solid $hero-border;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 5%,
+      rgba(6, 0, 0, 0.23012955182072825) 25%
+    );
+    z-index: 2;
+  }
+}

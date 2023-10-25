@@ -1,18 +1,17 @@
-.header__logo {
-  width: 157px;
-  transition: transform 250ms $timing-function;
-  &:hover {
-    transform: scale(1.05);
-  }
-}
-
 .header__container {
   @extend %container;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
+.header__logo {
+  width: 157px;
+  padding-top: 10px;
+  transition: transform 250ms $timing-function;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
 .header-nav {
   display: flex;
   gap: 50px;
@@ -67,8 +66,21 @@
 }
 
 .header-icon-list__icon {
+  fill: #fff;
+  transition: transform 250ms $timing-function, fill 250ms $timing-function,
+    stroke 250ms $timing-function;
   .header-icon-list__link:hover & {
     transform: scale(1.06);
+    fill: $icon-link;
+  }
+}
+
+.header-icon-list__icon--search {
+  fill: #000;
+  stroke: #fff;
+  .header-icon-list__link:hover & {
+    fill: #000;
+    stroke: $icon-link;
   }
 }
 
