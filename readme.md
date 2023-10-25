@@ -1,5 +1,4 @@
-Landing page layout. <br/>
-Movie page adapted for 4 screens Used:
+Landing page layout. <br/> Movie page adapted for 4 screens Used:
 
 1. Parcel project builder.
 2. HTML
