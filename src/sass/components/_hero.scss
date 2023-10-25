@@ -190,11 +190,18 @@
   background-position: center;
   width: 63.03%;
 
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: $motivation-gradient, url(../images/Bg/HeroBanner@2x.webp);
+  }
+
   @media screen and (max-width: 768px) {
     width: 100%;
     height: 500px;
     border-bottom: 2px solid $hero-border;
   }
+
   &:before {
     content: '';
     position: absolute;
